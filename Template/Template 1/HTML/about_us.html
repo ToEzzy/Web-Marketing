@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link to CSS -->
     <link rel="stylesheet" href="/Template/Template 1/CSS/style.css">
-    <title> Barber Shop </title>
+    <title> About us </title>
 </head>
 
 <body>
@@ -22,10 +22,11 @@
                 <li><a href="about_us.html"> About us </a></li>
                 <li><a href="our_prices.html"> Our Prices </a></li>
                 <li><a href="rating.html"> Rating </a></li>
-                <li><a href="https://www.google.com/maps/place/Coiffeur+Emre/@47.5702771,7.5942687,18z/data=!3m1!4b1!4m6!3m5!1s0x4791b9c47404dce5:0x28458a48130604c4!8m2!3d47.5702771!4d7.5952638!16s%2Fg%2F11t5h4hvsp?entry=ttu"> Navigation </a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Coiffeur+Emre/@47.5702771,7.5942687,18z/data=!3m1!4b1!4m6!3m5!1s0x4791b9c47404dce5:0x28458a48130604c4!8m2!3d47.5702771!4d7.5952638!16s%2Fg%2F11t5h4hvsp?entry=ttu">
+                        Navigation </a></li>
             </ul>
-            <a href="#"
-                class="action_btn"> Book an Appointment </a>
+            <a href="#" class="action_btn"> Book an Appointment </a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -33,20 +34,13 @@
         <div class="dropdown_menu">
             <li><a href="about_us.html"> About us </a></li>
             <li><a href="our_prices.html"> Our Prices </a></li>
-            <li><a href="#"> Rating </a></li>
-            <li><a href="https://www.google.com/maps/place/Coiffeur+Emre/@47.5702771,7.5942687,18z/data=!3m1!4b1!4m6!3m5!1s0x4791b9c47404dce5:0x28458a48130604c4!8m2!3d47.5702771!4d7.5952638!16s%2Fg%2F11t5h4hvsp?entry=ttu"> Navigation </a></li>
-            <li> <a href="#"
-                    class="action_btn"> Book an Appointment </a> </li>
+            <li><a href="rating.html"> Rating </a></li>
+            <li><a
+                    href="https://www.google.com/maps/place/Coiffeur+Emre/@47.5702771,7.5942687,18z/data=!3m1!4b1!4m6!3m5!1s0x4791b9c47404dce5:0x28458a48130604c4!8m2!3d47.5702771!4d7.5952638!16s%2Fg%2F11t5h4hvsp?entry=ttu">
+                    Navigation </a></li>
+            <li> <a href="#" class="action_btn"> Book an Appointment </a> </li>
         </div>
     </header>
-
-    <main>
-        <section id="hero">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Doloribus, repellendus.</p>
-        </section>
-
-    </main>
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
@@ -62,6 +56,67 @@
         }
 
     </script>
+
+
+    <!-- Openinghours -->
+    <div class="openinghour-flex-box">
+        <div class="openinghour-left">
+            <h2> Get in Touch</h2>
+            <br>
+            <h4> Contact us </h4>
+            <p> Email: XX.XXX@XXXXX.com </p>
+            <br>
+            <h4> Call us </h4>
+            <p> Tel: +41 XX XXX XX XX </p>
+            <br>
+            <h4> Location </h4>
+            <p> Hammerstrasse 200, 4057 Basel (CH) </p>
+        </div>
+        <div class="openinghour-mid">
+            <h2> Openinghours </h2>
+            <br>
+            <table>
+                <tr>
+                    <th>Monday</th>
+                    <td>&nbsp; Closed</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>&nbsp; 8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>&nbsp; 8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>&nbsp; 8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>&nbsp; 8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>&nbsp; 10am - 5pm</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td>&nbsp; Closed</td>
+                </tr>
+            </table>
+        </div>
+        <div class="openinghour-right">
+            <h2> Map Guide </h2>
+            <br>
+            <div id="iFrame-space">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.871904047126!2d7.592688875647062!3d47.57028069048589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9c47404dce5%3A0x28458a48130604c4!2sCoiffeur%20Emre!5e0!3m2!1sde!2sch!4v1698322466434!5m2!1sde!2sch"
+                    id="iFrame" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Footer -->
@@ -109,14 +164,9 @@
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-youtube"></a>
-
             </div>
-
         </div>
-
     </footer>
-
 </body>
-
 
 </html>
