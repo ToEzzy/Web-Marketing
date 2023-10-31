@@ -62,13 +62,19 @@ nav :hover{
 
 
 /* Header Styles */
-header {
-    color: black;
-    background-color: white;
+
+#extra-header {
     text-align: center;
     font-size: 50px;
     padding: 20px;
+    width: 100%;
+    height: 50px; /* Passen Sie die Höhe nach Bedarf an */
+}
 
+#header {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
     background-image: url("images/JapanHoodbarber-modified.jpg");
     background-size: cover;
     background-position: center;
@@ -76,7 +82,6 @@ header {
     background-attachment: fixed;
     width: 100%;
     height: 800px; /* Passen Sie die Höhe nach Bedarf an */
-    
 }
 
 /* Styles für Abschnitte und Überschriften */
@@ -86,30 +91,33 @@ section {
 
 h2 {
     text-align: center;
-    color: #333;
+    
 }
 
-
-#home{
-    background-color: black;
-}
 
 #about{
-    background-color: white;
+    color: black;
+    background-color: rgb(194, 194, 194);
 }
 
-#services
-{
+#services{
+color:white;
 background-color: black;
 }
+
 #pricing{
-background-color: white;
+color: black;
+background-color:  rgb(194, 194, 194);
 }
+
 #contact{
+color: white;
 background-color: black;
 }
+
 #appointment{
-background-color: white;
+color: black;
+background-color:  rgb(194, 194, 194);
 }
 
 /* Footer Styles */
