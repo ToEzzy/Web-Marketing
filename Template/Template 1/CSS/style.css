@@ -15,7 +15,7 @@ body {
 
 a {
   color: black;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 a:hover {
@@ -38,7 +38,7 @@ header {
 }
 
 .navbar .logo a {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
@@ -55,13 +55,13 @@ header {
 }
 
 .action_btn {
-  background-color: orange;
+  background-color: brown;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2s ease;
@@ -295,6 +295,31 @@ section#hero {
   }
 }
 
+/* Rating */ 
+.rating-flex-box {
+  background-color: #2d2a30;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 5px 1.5%;
+  border-width: 5px;
+  border-style: solid;
+  border: 4px solid #eee;
+  box-shadow: 0 0 1px #eee;
+
+}
+
+#rating-header{
+  text-align: center;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.rating-ground {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2%;
+}
 
 /* Openinghours */
 .openinghour-flex-box {
@@ -345,6 +370,8 @@ section#hero {
   justify-content: center;
   border-style: solid;
 }
+
+
 
 /* Responsive Design */
 @media all and (max-width: 1008px) {
