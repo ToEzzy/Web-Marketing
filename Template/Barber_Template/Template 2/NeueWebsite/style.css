@@ -4,7 +4,7 @@ body {
     font-size: 25px;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: white;
     display: flex;
     height: 100vh;
 }
@@ -13,7 +13,7 @@ body {
     align-items:center ;
     text-align: center;
     font-size: 30px;
-    background-color: black;
+    background-color: white(0, 0, 0);
     color: #fff;
     width: 450px;
     height: 100%;
@@ -22,6 +22,11 @@ body {
 
 /* Logo-Styles */
 .logo {
+    width: 250px; /* Die gewünschte Breite des Logos */
+    height: auto; /* Die Höhe automatisch anpassen */
+    padding-bottom: 30px;
+}
+.gif {
     width: 250px; /* Die gewünschte Breite des Logos */
     height: auto; /* Die Höhe automatisch anpassen */
     padding-bottom: 30px;
@@ -38,8 +43,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     display: block;
+}
+
+nav :hover{
+    color: rgb(179, 179, 179);
 }
 
 .content {
@@ -53,45 +62,62 @@ nav a {
 
 
 /* Header Styles */
-header {
-    color: black;
-    background-color: white;
+
+#extra-header {
     text-align: center;
     font-size: 50px;
     padding: 20px;
-    height: 500px;
+    width: 100%;
+    height: 50px; /* Passen Sie die Höhe nach Bedarf an */
+}
+
+#header {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    background-image: url("images/JapanHoodbarber-modified.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px; /* Passen Sie die Höhe nach Bedarf an */
 }
 
 /* Styles für Abschnitte und Überschriften */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 h2 {
-    color: #333;
+    text-align: center;
+    
 }
 
-
-#home{
-    background-color: blue;
-}
 
 #about{
-    background-color: red;
+    color: black;
+    background-color: rgb(194, 194, 194);
 }
 
-#services
-{
-background-color: blue;
+#services{
+color:white;
+background-color: black;
 }
+
 #pricing{
-background-color: red;
+color: black;
+background-color:  rgb(194, 194, 194);
 }
+
 #contact{
-background-color: blue;
+color: white;
+background-color: black;
 }
+
 #appointment{
-background-color: red;
+color: black;
+background-color:  rgb(194, 194, 194);
 }
 
 /* Footer Styles */
