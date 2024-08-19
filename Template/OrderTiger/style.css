@@ -438,16 +438,17 @@ section#hero {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  background-color: #000; /* Hintergrundfarbe der Navbar */
+  background-color: #ffffff; /* Hintergrundfarbe der Navbar */
   z-index: 1000; /* Sicherstellen, dass die Navbar über anderen Inhalten bleibt */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
   padding: 0 20px; /* Hinzufügen von seitlichem Innenabstand */
 }
 
+
 .navbar .logo a {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #fff; /* Schriftfarbe des Logos */
+  color: #000000; /* Schriftfarbe des Logos */
   text-decoration: none;
 }
 
@@ -459,7 +460,7 @@ section#hero {
 }
 
 .navbar .links a {
-  color: #fff; /* Schriftfarbe der Links */
+  color: #000000; /* Schriftfarbe der Links */
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
@@ -476,7 +477,7 @@ section#hero {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 5s ease;
   text-decoration: none;
   padding: 0.5rem 1rem; /* Hinzufügen von Innenabstand für den Button */
 }
@@ -490,6 +491,19 @@ section#hero {
   transform: scale(0.95);
 }
 
+
+/* Stil für den aktiven Link */
+.navbar .links a.active, .navbar .links a:focus, .navbar .links a:active {
+  padding: 5px;
+  color: orange; /* Ändert die Textfarbe des aktiven Links */
+  border-radius: 6px; /* Macht die Ecken des Rahmens rund */
+  border: 2px solid orange; /* Fügt einen unteren Rahmen hinzu */
+}
+
+/* Optional: Hover-Effekt */
+.navbar .links a:hover {
+  color: orange; /* Farbe der Links beim Hover */
+}
 
 
 

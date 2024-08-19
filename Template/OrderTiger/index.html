@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
-    <title> OrderTIger </title>
+    <title> Swiss Order </title>
 
     <style>
         html {
@@ -24,7 +24,7 @@
         <div class="navbar">
             <div class="logo"><a href="index.html">Order Tiger</a></div>
             <ul class="links">
-                <li><a href="#hero">Home</a></li>
+                <li><a href="#hero" class="active">Home</a></li> <!-- Hier die "active"-Klasse -->
                 <li><a href="#features">Feature</a></li>
                 <li><a href="#platforms">Rating</a></li>
                 <li><a href="#access">Rating</a></li>
@@ -36,7 +36,8 @@
             <div class="action_btn"><a href="#">Book an Appointment</a></div>
         </div>
     </header>
-    
+
+
 
     <main>
         <section id="hero">
@@ -248,6 +249,20 @@
 
     </footer>
 
+
+
+
+    <script>
+        document.querySelectorAll('.navbar .links a').forEach(link => {
+          link.addEventListener('click', function() {
+            // Entferne 'active' Klasse von allen Links
+            document.querySelectorAll('.navbar .links a').forEach(el => el.classList.remove('active'));
+            // Füge 'active' Klasse zu dem geklickten Link hinzu
+            this.classList.add('active');
+          });
+        });
+      </script>
+    
 </body>
 
 
