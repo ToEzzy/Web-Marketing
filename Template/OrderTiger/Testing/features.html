@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Feature Section</title>
+    <link rel="stylesheet" href="feautres.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Swiss Ordering</div>
+            <div class="menu-toggle">
+                <!-- Hamburger Menu Icon (3 Punkte) -->
+                <span class="menu-icon">&#x2022;&#x2022;&#x2022;</span>
+            </div>
+            <ul class="links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#feature-section">Feature</a></li>
+                <li><a href="#platforms">Rating</a></li>
+                <li><a href="#access">Rating</a></li>
+                <li><a href="#how-it-works">Rating</a></li>
+                <li><a href="#testimonials">Rating</a></li>
+                <li><a href="#pricing">Rating</a></li>
+                <li><a href="https://www.google.com/maps/place/Coiffeur+Emre">Navigation</a></li>
+            </ul>
+            <div class="button-container">
+                <button class="btn btn-transparent">Live Demo</button>
+                <button class="btn btn-black">Start Free Trial</button>
+            </div>
+        </div>
+        <i class="fa-solid fa-phone"></i>
+        <!-- Overlay Menu -->
+        <div class="overlay-menu" id="mobileMenu">
+            <div class="overlay-content">
+                <a href="#hero">Home</a>
+                <a href="#feature-section">Feature</a>
+                <a href="#platforms">Rating</a>
+                <a href="#access">Rating</a>
+                <a href="#how-it-works">Rating</a>
+                <a href="#testimonials">Rating</a>
+                <a href="#pricing">Rating</a>
+                <a href="https://www.google.com/maps/place/Coiffeur+Emre">Navigation</a>
+                <span class="close-btn" id="closeMenu">&times;</span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="feature-section">
+        <div class="feature-container">
+            <!-- Left side: Image/Illustration -->
+            <div class="feature-image">
+                <img src="/Template/OrderTiger/img/Dashboard2.png" alt="Dashboard Overview">
+            </div>
+            <!-- Right side: Feature boxes -->
+            <div class="feature-text">
+                <h2>Increase Revenue With Swiss Order.</h2>
+                <div class="features">
+                    <div class="feature-box">
+                        <div class="feature-icon">💡</div>
+                        <div class="feature-content">
+                            <h3>Reach new customers</h3>
+                            <p>Expand customer base with targeted promotions and advertising.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🛒</div>
+                        <div class="feature-content">
+                            <h3>Own your ordering</h3>
+                            <p>Customizable menus and branding for your restaurant's unique style.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚙️</div>
+                        <div class="feature-content">
+                            <h3>Simplify operations</h3>
+                            <p>Streamline workflow with easy-to-use management tools.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📈</div>
+                        <div class="feature-content">
+                            <h3>Increase your revenue</h3>
+                            <p>Boost sales with integrated loyalty programs and upselling prompts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <div class="button-container">
+        <button class="btn btn-transparent">Live Demo</button>
+        <button class="btn btn-black">Start Free Trial</button>
+    </div>
+    
+    <script> 
+        // Toggle the menu when the hamburger icon is clicked
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+         document.getElementById('mobileMenu').classList.add('active');
+     });
+     
+     // Close the menu when the close button is clicked
+     document.getElementById('closeMenu').addEventListener('click', function () {
+         document.getElementById('mobileMenu').classList.remove('active');
+     });
+ </script>
+    
+</body>
+
+</html>

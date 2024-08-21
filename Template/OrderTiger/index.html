@@ -5,35 +5,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link to CDNJS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css" integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
     <title> Swiss Order </title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        </style>
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="index.html">Order Tiger</a></div>
+            <div class="logo">Swiss Ordering</div>
+            <div class="menu-toggle">
+                <!-- Hamburger Menu Icon (3 Punkte) -->
+                <span class="menu-icon"><img src="/Template/OrderTiger/img/menu2.png" alt="" width="40px" height="40px"></span>
+            </div>
             <ul class="links">
-                <li><a href="#hero" class="active">Home</a></li> <!-- Hier die "active"-Klasse -->
-                <li><a href="#features">Feature</a></li>
-                <li><a href="#platforms">Rating</a></li>
-                <li><a href="#access">Rating</a></li>
-                <li><a href="#how-it-works">Rating</a></li>
-                <li><a href="#testimonials">Rating</a></li>
-                <li><a href="#pricing">Rating</a></li>
-                <li><a href="https://www.google.com/maps/place/Coiffeur+Emre/@47.5702771,7.5942687,18z/data=!3m1!4b1!4m6!3m5!1s0x4791b9c47404dce5:0x28458a48130604c4!8m2!3d47.5702771!4d7.5952638!16s%2Fg%2F11t5h4hvsp?entry=ttu">Navigation</a></li>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#feature-section">Feature</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="https://maps.app.goo.gl/5DiEn4AuDaGaYwvx5">Find us</a></li>
             </ul>
-            <div class="action_btn"><a href="#">Book an Appointment</a></div>
+            <div class="button-container">
+                <button class="btn btn-transparent">Live Demo</button>
+                <button class="btn btn-black">Start Free Trial</button>
+            </div>
+        </div>
+    
+        <!-- Overlay Menu -->
+        <div class="overlay-menu" id="mobileMenu">
+            <div class="overlay-content">
+                <a href="#hero">Home</a>
+                <a href="#feature-section">Feature</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#access">Access</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#testimonials">Testimonial</a>
+                <a href="#pricing">Pricing</a>
+                <a href="https://maps.app.goo.gl/5DiEn4AuDaGaYwvx5">Find us</a>
+                <span class="close-btn" id="closeMenu">&times;</span>
+            </div>
         </div>
     </header>
 
@@ -41,14 +57,57 @@
 
     <main>
         <section id="hero">
-            <h1>Present Your Software With Sware</h1>
-            <p>This should be used to tell a story app benefits & more</p>
-            <button>GET STARTED</button>
-            <img class="start-hero" src="/img/Dashboard.png" alt="Dashboard">
+            <h1>Free Online Food Ordering System</h1>
+            <p>For Restaurants</p>
+            <div class="action_btn2"><a href="#">Get Started</a></div>
+
         </section>
 
     </main>
+    <section id="feature-section">
+        <div class="feature-container">
+            <!-- Left side: Image/Illustration -->
+            <div class="feature-image">
+                <img src="/Template/OrderTiger/img/Dashboard2.png" alt="Dashboard Overview">
+            </div>
+            <!-- Right side: Feature boxes -->
+            <div class="feature-text">
+                <h2>Increase Revenue With Swiss Order.</h2>
+                <div class="features">
+                    <div class="feature-box">
+                        <div class="feature-icon">💡</div>
+                        <div class="feature-content">
+                            <h3>Reach new customers</h3>
+                            <p>Expand customer base with targeted promotions and advertising.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🛒</div>
+                        <div class="feature-content">
+                            <h3>Own your ordering</h3>
+                            <p>Customizable menus and branding for your restaurant's unique style.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚙️</div>
+                        <div class="feature-content">
+                            <h3>Simplify operations</h3>
+                            <p>Streamline workflow with easy-to-use management tools.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📈</div>
+                        <div class="feature-content">
+                            <h3>Increase your revenue</h3>
+                            <p>Boost sales with integrated loyalty programs and upselling prompts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+<!-- 
 
     <section id="features">
         <h2>Top Features</h2>
@@ -72,12 +131,12 @@
         </div>
     </section>
     
-
+ -->
 
     <section id="platforms">
         <div class="platforms-container">
             <div class="platform-text">
-                <img src="/img/rocket.png" alt="Platform Icon">
+                <img class="platform-icon" src="/Template/OrderTiger/img/rocket.png" alt="Platform Icon">
                 <h2>Works on all platforms</h2>
                 <p>Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             </div>
@@ -121,24 +180,24 @@
             <p>We show only the best websites, portfolios, and landing pages built completely with passion, simplicity & creativity!</p>
             <div class="testimonial-row">
                 <div class="testimonial">
-                    <img src="avatar1.png" alt="Mark Smith">
+                    <img src="/Template/OrderTiger/img/user.png" alt="Mark Smith">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt."</p>
                     <h4>MARK SMITH</h4>
                 </div>
                 <div class="testimonial">
-                    <img src="avatar2.png" alt="Jessy Arthur">
+                    <img src="/Template/OrderTiger/img/user.png" alt="Mark Smith">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt."</p>
                     <h4>JESSY ARTHUR</h4>
                 </div>
             </div>
             <div class="testimonial-row">
                 <div class="testimonial">
-                    <img src="avatar3.png" alt="Maya Jonson">
+                    <img src="/Template/OrderTiger/img/user.png" alt="Mark Smith">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt."</p>
                     <h4>MAYA JONSON</h4>
                 </div>
                 <div class="testimonial">
-                    <img src="avatar4.png" alt="Steve Martin">
+                    <img src="/Template/OrderTiger/img/user.png" alt="Mark Smith">
                     <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt."</p>
                     <h4>STEVE MARTIN</h4>
                 </div>
@@ -200,56 +259,47 @@
     <!-- Footer -->
     <footer class="footer-distributed">
         <div class="footer-left">
-            <h3> Emre <span> Coiffeur </span></h3>
+            <h3>Swiss <span>Order</span></h3>
             <p class="footer-links">
-                <a href="#"> Home </a>
-
-                <a href="#"> About </a>
-
-                <a href="#"> Contact </a>
-
-                <a href="#"> Blogs </a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blogs</a>
             </p>
-
-            <p class="footer-company-name"> Copyright @ 2023 <strong> Coiffeur Emre </strong>
-                All rights reserved </p>
+            <p class="footer-company-name">Copyright @ 2024 <strong>Swiss Order</strong> All rights reserved</p>
         </div>
-
+    
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span> Schweiz (CH) </span> Hammerstrasse 200, Basel </p>
+                <p><span> Schweiz (CH) </span> Lehenmattstrasse 230, Basel 4052 </p>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
-                <p> +41 76 680 41 07 </p>
+                <p> +41 78 752 31 58 </p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="#"> can.akar767@gmail.com </a></p>
+                <p><a href="#"> akarcan.business@gmail.com </a></p>
             </div>
         </div>
-
+    
         <div class="footer-right">
             <p class="footer-company-about">
-                <span> About the Company </span>
-                <strong> Sagar Delveloper </strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                rem nesciunt et nulla ducimus, unde accusamus necessitatibus sunt autem at!
+                <span>About the Company</span>
+                <strong>Sagar Developer</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="footer-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-
         </div>
-
     </footer>
+    
 
-
+    
 
 
     <script>
@@ -262,6 +312,25 @@
           });
         });
       </script>
+<!-- Script für navbar zum aufklappen im Handy modus  -->
+<script> 
+  // Toggle the menu when the hamburger icon is clicked
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    document.getElementById('mobileMenu').classList.add('active');
+});
+
+// Close the menu when the close button is clicked
+document.getElementById('closeMenu').addEventListener('click', function () {
+    document.getElementById('mobileMenu').classList.remove('active');
+});
+
+// Close the menu when any link inside the overlay is clicked
+document.querySelectorAll('.overlay-content a').forEach(link => {
+    link.addEventListener('click', function () {
+        document.getElementById('mobileMenu').classList.remove('active');
+    });
+});
+</script>
     
 </body>
 

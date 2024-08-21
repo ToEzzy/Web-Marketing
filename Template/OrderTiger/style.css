@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; /* Höhe des fixierten Headers/Navbars */
+
 }
 
 a {
@@ -66,14 +69,14 @@ section#hero {
 }
 
 
-
+/* 
 #features {
   text-align: center;
   padding: 40px 40px;
   background-color: #fff;
   color: #333;
   margin-top: 20px;
-  border-bottom: 1px solid #000; /* Dünne schwarze Linie unten */
+  border-bottom: 1px solid #000; /* Dünne schwarze Linie unten 
 }
 
 #features h2 {
@@ -115,7 +118,7 @@ section#hero {
   font-size: 1em;
   color: #666;
 }
-
+ */
 
 
 
@@ -166,7 +169,6 @@ section#hero {
   height: auto;
 }
 
-
 #how-it-works {
   background-color: #fff;
   padding: 50px 20px;
@@ -208,8 +210,6 @@ section#hero {
   height: 100%;
   transform: translateX(-50%);
 }
-
-
 
 
 #testimonials {
@@ -442,14 +442,16 @@ section#hero {
   z-index: 1000; /* Sicherstellen, dass die Navbar über anderen Inhalten bleibt */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
   padding: 0 20px; /* Hinzufügen von seitlichem Innenabstand */
+  border-bottom: 1px solid #000; /* Dünne schwarze Linie unten */
+
 }
 
 
-.navbar .logo a {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #000000; /* Schriftfarbe des Logos */
-  text-decoration: none;
+.logo {
+font-style: normal;
+font-size: x-large;
+font-weight: 600;
+color: black;
 }
 
 .navbar .links {
@@ -471,9 +473,10 @@ section#hero {
 }
 
 .navbar .action_btn a {
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
+  margin-inline-start: 10px;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 4px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -484,7 +487,7 @@ section#hero {
 
 .navbar .action_btn a:hover {
   transform: scale(1.05);
-  color: #fff;
+  color: #ff4646;
 }
 
 .navbar .action_btn a:active {
@@ -495,14 +498,155 @@ section#hero {
 /* Stil für den aktiven Link */
 .navbar .links a.active, .navbar .links a:focus, .navbar .links a:active {
   padding: 5px;
-  color: orange; /* Ändert die Textfarbe des aktiven Links */
   border-radius: 6px; /* Macht die Ecken des Rahmens rund */
-  border: 2px solid orange; /* Fügt einen unteren Rahmen hinzu */
+  border: 2px solid rgb(0, 0, 0); /* Fügt einen unteren Rahmen hinzu */
 }
 
 /* Optional: Hover-Effekt */
 .navbar .links a:hover {
-  color: orange; /* Farbe der Links beim Hover */
+  color: rgb(255, 0, 0); /* Farbe der Links beim Hover */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Button without background */
+.button-container .btn-transparent {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border: 2px;
+  border: 2px solid rgb(0, 0, 0); /* Fügt einen unteren Rahmen hinzu */
+  
+}
+
+/* Regular button with background */
+.button-container .btn-black {
+  background-color: black;
+  color: white;
+}
+
+/* Hover effect */
+.button-container .btn-transparent:hover {
+  color: rgb(255, 0, 0); /* Farbe der Links beim Hover */
+}
+
+/* Hover effect */
+.button-container .btn-black:hover {
+  color: rgb(255, 0, 0); /* Farbe der Links beim Hover */
+}
+
+
+.action_btn2 {
+  background-color: rgb(0, 0, 0);
+  border: 2px;
+  border: 2px solid white; /* Fügt einen unteren Rahmen hinzu */
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 5s ease;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Hinzufügen von Innenabstand für den Button */
+  margin-block-start: -20px;
+}
+
+.action_btn2 a:hover {
+  color: #ff4646;
+}
+
+
+
+#feature-section {
+  border-bottom: 1px solid #000; /* Dünne schwarze Linie unten */
+  margin-top: 10px;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.feature-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.feature-image img {
+margin-top: 50px;    
+width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #ffffff;
+  border-radius: 6px; /* Macht die Ecken des Rahmens rund */
+  border: 2px solid black; /* Fügt einen unteren Rahmen hinzu */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: #ff6600;
+}
+
+.feature-content h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.feature-content p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .features {
+      grid-template-columns: 1fr;
+  }
 }
 
 
@@ -759,68 +903,247 @@ section#hero {
 }
 
 
+/* Hamburger Menu Icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  color: black;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* Overlay Menu Styles */
+.overlay-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikale Zentrierung */
+  align-items: center; /* Horizontale Zentrierung */
+  gap: 20px;
+  height: 100%; /* Stellt sicher, dass das gesamte Overlay genutzt wird */
+}
+
+.overlay-content a:hover {
+  background-color: rgb(255, 255, 255); /* Optional: Hintergrundfarbe ändern */
+  padding: 10px;
+  border-radius: 6px; /* Optional: Runde Ecken beim Hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergangseffekt */
+}
+
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-content a:hover {
+  color: #ff0000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
 
 /* Responsive Design */
-@media all and (max-width: 1008px) {
-
+@media all and (max-width: 768px) {
   .navbar .links,
-  .navbar .action_btn {
-    display: none;
+  .navbar .button-container {
+      display: none;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  /* When the overlay menu is open */
+  .overlay-menu.active {
+      width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .features {
+      grid-template-columns: 1fr;
+  }
+
+}
+
+
+
+  /* Responsive Design */
+@media all and (max-width: 992px) {
+  .navbar .links {
+      display: none;
+  }
+
+  .navbar .button-container {
+      flex-direction: column;
+      gap: 5px;
   }
 
   .navbar .toggle_btn {
-    display: block;
-    color: black;
+      display: block;
+      cursor: pointer;
+      color: black;
   }
 
-  .dropdown_menu {
-    display: block;
+  .navbar .dropdown_menu {
+      display: block;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-
-  /* Openinghours */
-  .openinghour-flex-box {
-    flex-flow: wrap;
-  }
-
-  .openinghour-left, .openinghour-mid{
-    flex: 0 0 47%;
-    margin-bottom: 20px;
-  }
-
   
+}
 
-  .openinghour-right {
-    width: 100%;
-    flex: 0 0 100%;
+/* Layout-Anpassungen für Tablets und kleinere Laptops */
+@media (max-width: 768px) {
+  .feature-container {
+      flex-direction: column;
+      text-align: center;
   }
 
-  .footer {
-    position: static;
+  .features {
+      grid-template-columns: 1fr;
+  }
+
+  .platforms-container,
+  .access-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .platform-text,
+  .access-text {
+      max-width: 100%;
+  }
+
+  .platform-image img,
+  .access-image img {
+      width: 90%;
+      margin: 0 auto;
   }
 }
 
-@media all and (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
+/* Layout für Mobilgeräte */
+@media (max-width: 576px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
   }
 
-  /* Openinghours */
-  .openinghour-flex-box {
-    flex-direction: column;
+  .navbar .links a {
+      font-size: 1rem;
   }
 
-  .openinghour-left {
-    width: 100%;
-    margin-bottom: 10px;
+  .button-container {
+      flex-direction: column;
+      gap: 5px;
   }
 
-  .openinghour-mid {
-    width: 100%;
-    margin-bottom: 10px;
+  .navbar .toggle_btn {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  
+  
+  
+
+
+
+
+  .navbar .dropdown_menu {
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 999;
+  }
+  
+  
+
+  /* Vollbild-Layout für Features */
+  .features {
+      grid-template-columns: 1fr;
   }
 
-  .openinghour-right {
-    width: 100%;
+  .feature-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .platform-text,
+  .access-text {
+      text-align: center;
+  }
+
+  .platform-image img,
+  .access-image img {
+      width: 100%;
+  }
+
+  #testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-row {
+    display: flex;
+    flex-direction: column; /* Elemente untereinander anordnen */
+    align-items: center; /* Zentriert die Testimonials in der Mitte */
+}
+
+.testimonial {
+    width: 100%; /* Stellt sicher, dass die Testimonials die gesamte Breite nutzen */
+    max-width: 600px; /* Optional: Begrenzung der maximalen Breite */
+    margin: 10px 0; /* Abstand zwischen den Testimonials */
+}
+
+
+  .pricing-cards {
+      flex-direction: column;
+  }
+
+  .pricing-card {
+      max-width: 100%;
+      width: 100%;
   }
 }
