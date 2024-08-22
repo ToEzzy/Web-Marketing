@@ -4,113 +4,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Feature Section</title>
     <link rel="stylesheet" href="feautres.css">
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="jquery-3.3.1.slim.min.js">
+<link rel="stylesheet" href="bootstrap.bundle.min.js">
+<link rel="stylesheet" href="font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css">
+
+    
+
 </head>
 
 <body>
+    <!-- Navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Transparent Nav</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">Swiss Ordering</div>
-            <div class="menu-toggle">
-                <!-- Hamburger Menu Icon (3 Punkte) -->
-                <span class="menu-icon">&#x2022;&#x2022;&#x2022;</span>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home
+                                <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="links">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#feature-section">Feature</a></li>
-                <li><a href="#platforms">Rating</a></li>
-                <li><a href="#access">Rating</a></li>
-                <li><a href="#how-it-works">Rating</a></li>
-                <li><a href="#testimonials">Rating</a></li>
-                <li><a href="#pricing">Rating</a></li>
-                <li><a href="https://www.google.com/maps/place/Coiffeur+Emre">Navigation</a></li>
-            </ul>
-            <div class="button-container">
-                <button class="btn btn-transparent">Live Demo</button>
-                <button class="btn btn-black">Start Free Trial</button>
-            </div>
-        </div>
-        <i class="fa-solid fa-phone"></i>
-        <!-- Overlay Menu -->
-        <div class="overlay-menu" id="mobileMenu">
-            <div class="overlay-content">
-                <a href="#hero">Home</a>
-                <a href="#feature-section">Feature</a>
-                <a href="#platforms">Rating</a>
-                <a href="#access">Rating</a>
-                <a href="#how-it-works">Rating</a>
-                <a href="#testimonials">Rating</a>
-                <a href="#pricing">Rating</a>
-                <a href="https://www.google.com/maps/place/Coiffeur+Emre">Navigation</a>
-                <span class="close-btn" id="closeMenu">&times;</span>
-            </div>
-        </div>
+        </nav>
     </header>
 
 
-    <section class="feature-section">
-        <div class="feature-container">
-            <!-- Left side: Image/Illustration -->
-            <div class="feature-image">
-                <img src="/Template/OrderTiger/img/Dashboard2.png" alt="Dashboard Overview">
+    <!-- For demo purpose -->
+    <div class="container">
+        <div class="pt-5 text-white">
+            <header class="py-5 mt-5">
+                <h1 class="display-4">Transparent Navbar</h1>
+                <p class="lead mb-0">Using Bootstrap 4 and Javascript, create a transparent navbar which changes its
+                    style on scroll.</p>
+                <p class="lead mb-0">Snippet by
+                    <a href="https://bootstrapious.com" class="text-white">
+                        <u>Bootstrapious</u></a>
+                </p>
+            </header>
+            <div class="py-5">
+                <p class="lead">Lorem ipsum dolor sit amet, <strong class="font-weight-bold">consectetur adipisicing
+                    </strong>elit. Explicabo consectetur odio voluptatum facere animi temporibus, distinctio tempore
+                    enim corporis quam <strong class="font-weight-bold">recusandae </strong>placeat! Voluptatum
+                    voluptate, ex modi illum quas nam distinctio.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <!-- Right side: Feature boxes -->
-            <div class="feature-text">
-                <h2>Increase Revenue With Swiss Order.</h2>
-                <div class="features">
-                    <div class="feature-box">
-                        <div class="feature-icon">💡</div>
-                        <div class="feature-content">
-                            <h3>Reach new customers</h3>
-                            <p>Expand customer base with targeted promotions and advertising.</p>
-                        </div>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🛒</div>
-                        <div class="feature-content">
-                            <h3>Own your ordering</h3>
-                            <p>Customizable menus and branding for your restaurant's unique style.</p>
-                        </div>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚙️</div>
-                        <div class="feature-content">
-                            <h3>Simplify operations</h3>
-                            <p>Streamline workflow with easy-to-use management tools.</p>
-                        </div>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">📈</div>
-                        <div class="feature-content">
-                            <h3>Increase your revenue</h3>
-                            <p>Boost sales with integrated loyalty programs and upselling prompts.</p>
-                        </div>
-                    </div>
+            <div class="py-5">
+                <p class="lead">Lorem ipsum dolor sit amet, <strong class="font-weight-bold">consectetur adipisicing
+                    </strong>elit. Explicabo consectetur odio voluptatum facere animi temporibus, distinctio tempore
+                    enim corporis quam <strong class="font-weight-bold">recusandae </strong>placeat! Voluptatum
+                    voluptate, ex modi illum quas nam distinctio.</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- For demo purpose -->
+    <section class="py-5 text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4">Bootstrap 4 megamenu</h1>
+                    <p class="lead mb-0">A very simple way to create Bootstrap 4 megamneu. </p>
+                    <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets"
+                            class='text-white'><u>Bootstrapious</u></a>. </p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-10 mx-auto">
+                    <p class="lead">Use the default Bootstrap's dropdown menu to hold your megamneu.</p>
+                    <p class="lead">Set the <code>.dropdown</code> position to <code>static</code> instead of
+                        <code>absolute</code>.</p>
+                    <p class="lead">We use the class <code>.megamenu</code> to hold this <code>static</code> position.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
- 
-    <div class="button-container">
-        <button class="btn btn-transparent">Live Demo</button>
-        <button class="btn btn-black">Start Free Trial</button>
-    </div>
-    
-    <script> 
-        // Toggle the menu when the hamburger icon is clicked
-document.querySelector('.menu-toggle').addEventListener('click', function () {
-         document.getElementById('mobileMenu').classList.add('active');
+    <!-- End -->
+
+
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Android App</a></li>
+                                <li><a href="#">ios App</a></li>
+                                <li><a href="#">Desktop</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">My tasks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Term &amp; conditions</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com"
+                                target="_blank">CakeCounter</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+     $(window).on('scroll', function () {
+         if ( $(window).scrollTop() > 10 ) {
+             $('.navbar').addClass('active');
+         } else {
+             $('.navbar').removeClass('active');
+         }
      });
-     
-     // Close the menu when the close button is clicked
-     document.getElementById('closeMenu').addEventListener('click', function () {
-         document.getElementById('mobileMenu').classList.remove('active');
-     });
- </script>
-    
+   } );
+     </script>
+
+
+
 </body>
+
 
 </html>
