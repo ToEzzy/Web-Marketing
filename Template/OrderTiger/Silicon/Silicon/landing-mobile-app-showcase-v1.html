@@ -19,8 +19,8 @@
 
   <!-- Favicon and Touch Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/SOfavicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/SOfavicon-16x16.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
@@ -122,6 +122,33 @@
     .containercan {
       margin-top: 60px;
     }
+    /* Buttons Start free trial etc. */
+    .btn-primary {
+            background-color: #ef4444 !important; /* Deine gewünschte Farbe */
+            border-color: #ef4444 !important; /* Gleiche Farbe für den Rand */
+            color: white;
+        }
+        /* Button, collapsable */
+   .accordion-button::after {
+            background-color: #ef4444 !important; /* Deine gewünschte Farbe */
+            border-color: #ef4444 !important; /* Gleiche Farbe für den Rand */
+            color: white;
+        }
+        .text-primary {
+            color: #ef4444 !important;
+        }
+
+        .navbar-nav .nav-link.active{
+            color: #ef4444 !important;
+            border: #ef4444 solid 2px;
+            border-radius: 6px;
+          }
+
+          a.nav-link:hover{
+            color: #ef4444 !important;
+            border-color: #ef4444 !important; /* Gleiche Farbe für den Rand */
+      
+          }
 
     .custom-margin {
       margin-left: 120px;
@@ -181,8 +208,8 @@
     <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
       <div class="container px-3">
         <a href="index.html" class="navbar-brand pe-3">
-          <img src="assets/img/logo.svg" width="47" alt="Silicon">
-          Swiss Ordering
+          <img src="assets/img/SO1.png" width="150" alt="Silicon">
+          Swiss Order
         </a>
         <div id="navbarNav" class="offcanvas offcanvas-end">
           <div class="offcanvas-header border-bottom">
@@ -336,11 +363,11 @@
             </a>
           </div>
         </div>
-        <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-          <input type="checkbox" class="form-check-input" id="theme-mode">
-          <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-          <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-        </div>
+        
+     
+
+
+      </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -1042,7 +1069,7 @@
   <footer class="footer pt-5 pb-4 pb-lg-5">
     <div class="container text-center pt-lg-3">
       <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
-        <img src="assets/img/logo.svg" class="me-2" width="60" alt="Silicon">
+        <img src="assets/img/SO1.png" class="me-2" width="180" alt="Silicon">
         <span class="fs-4">Swiss Order</span>
       </div>
       <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
